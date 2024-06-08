@@ -1,0 +1,514 @@
+[
+    {
+        "year": "2024",
+        "waste": {
+            "volume": 20372846.925,
+            "categories": [
+                {
+                    "category": "工業/科學園區",
+                    "volume": 17453379.34,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 780925.9822
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 4291512.672
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 2663757.314,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 116882.8822
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 1294072.928
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 1252801.503
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 6119262.181
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 1549191.848
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 154915.9127
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 435385.6982
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 1458427.73,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 808630.7252
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 649797.0052
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "其他",
+                    "volume": 517257.012,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 275798.2528
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 1127.72
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 19394.9999,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 119.193
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 12430.0466
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 6844.7603
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 80803.8256
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 96653.95312
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 11535.68383
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 29220.0493
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 2723.527477,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 1877.055152
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 846.472325
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "農業",
+                    "volume": 192490.182,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 2030.839927
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 0
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 34299.16912,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 34299.16912
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 1.23
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 5778.38
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 50.916224
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 150329.1489
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 0.4978,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 0.4978
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "營建",
+                    "volume": 2173720.389,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 25379.8221
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 1226.93
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 26281.23,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 118.85
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 26162.38
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 72880.42
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 2045604.147
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 392.97
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 0
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 1954.87,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 1954.87
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "year": "2024",
+        "waste": {
+            "volume": 20372846.925,
+            "categories": [
+                {
+                    "category": "工業/科學園區",
+                    "volume": 17453379.34,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 780925.9822
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 4291512.672
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 2663757.314,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 116882.8822
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 1294072.928
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 1252801.503
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 6119262.181
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 1549191.848
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 154915.9127
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 435385.6982
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 1458427.73,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 808630.7252
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 649797.0052
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "其他",
+                    "volume": 517257.012,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 275798.2528
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 1127.72
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 19394.9999,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 119.193
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 12430.0466
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 6844.7603
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 80803.8256
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 96653.95312
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 11535.68383
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 29220.0493
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 2723.527477,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 1877.055152
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 846.472325
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "農業",
+                    "volume": 192490.182,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 2030.839927
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 0
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 34299.16912,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 34299.16912
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 1.23
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 5778.38
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 50.916224
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 150329.1489
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 0.4978,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 0.4978
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "營建",
+                    "volume": 2173720.389,
+                    "types": [
+                        {
+                            "type": "可燃",
+                            "volume": 25379.8221
+                        },
+                        {
+                            "type": "爐碴",
+                            "volume": 1226.93
+                        },
+                        {
+                            "type": "污泥",
+                            "volume": 26281.23,
+                            "details": [
+                                {
+                                    "subType": "有害性污泥",
+                                    "volume": 0
+                                },
+                                {
+                                    "subType": "有機性污泥",
+                                    "volume": 118.85
+                                },
+                                {
+                                    "subType": "無機性污泥",
+                                    "volume": 26162.38
+                                }
+                            ]
+                        },
+                        {
+                            "type": "灰渣",
+                            "volume": 72880.42
+                        },
+                        {
+                            "type": "其他",
+                            "volume": 2045604.147
+                        },
+                        {
+                            "type": "金屬",
+                            "volume": 392.97
+                        },
+                        {
+                            "type": "食品加工",
+                            "volume": 0
+                        },
+                        {
+                            "type": "溶劑及廢酸鹼",
+                            "volume": 1954.87,
+                            "details": [
+                                {
+                                    "subType": "溶劑",
+                                    "volume": 1954.87
+                                },
+                                {
+                                    "subType": "廢酸鹼",
+                                    "volume": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

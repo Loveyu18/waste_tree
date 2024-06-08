@@ -1,0 +1,226 @@
+﻿@media (max-width: 1180px) {
+    .taiwan_map_b {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+    .taiwan_map {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1131px) {
+    .inside_title {
+        height: unset;
+    }
+    nav.left_menu {
+        display: flex;
+        width: 100%;
+        min-height: 131px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        grid-template-columns: unset;
+    }
+    /* 網頁捲軸【寬度】 */
+    nav.left_menu::-webkit-scrollbar {
+        width: 1px;
+        height: 10px;
+        border-radius: 15px;
+    }
+    /* 網頁捲軸【背景】顏色 */
+    nav.left_menu::-webkit-scrollbar-track {
+        border-radius: 15px;
+        background-color: rgba(250, 250, 250, .5);
+    }
+    /* 網頁捲軸【把手】顏色 */
+    nav.left_menu::-webkit-scrollbar-thumb {
+        background-color: rgba(250, 250, 250, .7);
+        border-radius: 15px;
+        width: 50%;
+    }
+    /* 網頁捲軸【滑過時】把手的顏色 */
+    nav.left_menu::-webkit-scrollbar-thumb:hover {
+        background: #fff;
+    }
+    nav.left_menu.active {
+        flex-wrap: wrap;
+        overflow-x: unset;
+    }
+    nav.left_menu>ul {
+        grid-auto-flow: column;
+        width: max-content;
+    }
+    nav.left_menu.active>ul {
+        grid-auto-flow: unset;
+        width: unset;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav.left_menu li {
+        display: flex;
+        align-items: center;
+    }
+    .inside {
+        grid-template-columns: unset;
+        place-content: center;
+    }
+    nav.left_menu li a {
+        margin-right: 0;
+        min-width: max-content;
+        padding: 10px 30px 10px 10px;
+        min-height: 60px;
+    }
+    .step1_txt {
+        font-size: 1.1rem;
+    }
+    .right_content {
+        margin-left: unset;
+        padding-right: unset;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .memebr_area {
+        position: absolute;
+        right: 0;
+        top: 10px
+    }
+    .footer_img {
+        display: none;
+    }
+}
+
+@media (max-width: 1042px) {
+    main {
+        grid-template-columns: unset;
+        gap: 20px;
+    }
+    .accountarea.on {
+        place-items: center;
+    }
+    .right_img2,
+    .right_img3 {
+        display: none;
+    }
+    .rightsideBar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-self: center;
+    }
+    .leftsideBar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-self: center;
+    }
+    .login,
+    .banner {
+        width: 100%;
+    }
+    .newsbtnbar {
+        display: flex;
+        justify-content: left;
+        margin: 0.5rem;
+    }
+    .pagemain {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .news_b {
+        flex-wrap: wrap;
+    }
+    .news_b h2,
+    .news_b ul {
+        width: 100%;
+    }
+    .news_b h2 {
+        height: unset;
+        border-right: none;
+        padding-bottom: 15px;
+        border-bottom: 2px solid;
+    }
+    .news_b_1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 630px) {
+    .headbar li {
+        display: block;
+        margin: 15px;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #0a2d24e5;
+        text-align: left;
+        list-style-type: none;
+        padding: 0;
+        margin: -50px 0 0 100px;
+    }
+}
+
+@media (max-width: 470px) {
+    .tab {
+        min-height: 385px;
+    }
+    .accountarea.on {
+        grid-auto-flow: unset;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu a {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .NEWS {
+        grid-template-columns: unset;
+        gap: 0;
+    }
+    .newsicon {
+        border-right: none;
+        border-bottom: #FFCE00 1px solid;
+        gap: 0;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h1 {
+        width: calc(100% - 124px);
+    }
+    h1 img {
+        width: 90%;
+    }
+    .tab {
+        min-height: 472px;
+        min-width: 453px;
+        background: url(../images/bg_login.png) top center/cover no-repeat;
+    }
+    .login,
+    .banner {
+        min-height: 472px;
+    }
+    .accountarea.on {
+        display: grid;
+        grid-auto-flow: column;
+        place-content: center;
+        gap: 23px;
+        padding: 20px;
+    }
+    .NEWS>ul {
+        display: grid;
+        gap: 0px;
+        padding-top: 3px;
+        margin: top auto;
+        overflow: auto;
+    }
+}

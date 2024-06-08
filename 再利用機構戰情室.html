@@ -1,0 +1,594 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>事業廢棄物流向分析系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a href="#accesskey_C" class="sr-only sr-only-focusable" title="跳到主要內容區塊" tabindex="1" id="linkGotoContent">跳到主要內容區塊</a>
+    <div id="wrapper">
+        <!-- 上面資訊 -->
+        <header>
+
+            <h1>
+                <a href="index.html">
+                    <img src="images/title_logo.svg" alt="事業廢棄物流向分析系統" />
+                </a>
+            </h1>
+        </header>
+        <!-- 上面資訊 end -->
+
+        <main class="pagemain">
+            <a title="內容區" name="content" href="#content" accesskey="C" class="sr-only ">:::</a>
+            <!-- 上方選單 -->
+            <div class="leftsideBar">
+                <div class="headbar">
+                    <ul id="menu">
+                        <li>
+                            <div><a href="#">○○○o您好</a></div>
+
+                        </li>
+                        <li><a href="#">帳號維護</a>
+                            <ul class="submenu">
+                                <li><a href="#">個人資料維護</a></li>
+                                <li><a href="#">密碼設定</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">登出</a>
+
+                        </li>
+                    </ul>
+
+                    <script>
+                        // 确保文档完全加载后执行代码
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const liItems = document.querySelectorAll("#menu li");
+
+                            liItems.forEach((li) => {
+                                li.addEventListener("mouseenter", () => {
+                                    li.querySelector(".submenu").style.display = "block";
+                                });
+
+                                li.addEventListener("mouseleave", () => {
+                                    li.querySelector(".submenu").style.display = "none";
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+
+            </div>
+            <!-- 左邊資訊  -->
+
+            <!-- 右邊 -->
+            <div class="rightsideBar">
+                <div class="headbar">
+                    <ul id="menu">
+
+                        <li>
+                            <div><a href="#">系統管理</a>/</div>
+
+                        </li>
+                        <li>
+                            <div><a href="#">回上一頁</a></div>
+
+                        </li>
+                    </ul>
+
+                    <script>
+                        // 确保文档完全加载后执行代码
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const liItems = document.querySelectorAll("#menu li");
+
+                            liItems.forEach((li) => {
+                                li.addEventListener("mouseenter", () => {
+                                    li.querySelector(".submenu").style.display = "block";
+                                });
+
+                                li.addEventListener("mouseleave", () => {
+                                    li.querySelector(".submenu").style.display = "none";
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+
+            </div>
+            <!-- 右邊 -->
+
+
+        </main>
+
+        <div class="centered-content">
+            <div class="singlebar">再利用機構戰情室
+            </div>
+
+            <div class="information_select">
+                <img src="images/a5.svg" alt="處" class="a_position"> 查詢年度：
+
+                <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
+            <option value="0" selected="'selected'">111年</option>
+            <option value="3">111年</option>
+            <option value="2">111年</option>
+          </select>
+                <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
+            <option value="0" selected="'selected'">級別</option>
+            <option value="3">級別</option>
+            <option value="2">級別</option>
+          </select>
+
+                <a class="newsbtn" href="#">
+                    <div>查詢</div>
+                </a>
+
+                查詢單家：
+
+                <input type="text" id="txt_seach" accesskey="S" class="text KeyWord" placeholder="輸入統編/機構名稱
+                " title="輸入統編/機構名稱" data-listener-added_8f861d35="true">
+
+                <a class="newsbtn" href="#">
+                    <div>查詢</div>
+                </a>
+
+            </div>
+            <section class="taiwan_map_b">
+                <div class="taiwan_map_b22">
+                    <a class="Nationwide" href="#">全國 </a>
+                    <svg class="taiwan_map" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 907.1" style="enable-background:new 0 0 595.3 907.1;" xml:space="preserve">
+          
+  <a href=" javascript:void(0);">
+  
+        <path id="臺北市" class="st0" d="M539.6,188.1L539.6,188.1v-38.8c0-2.8-2.3-5-5-5h-73.7v43.8H539.6z"></path>
+        <text transform="matrix(1 0 0 1 476.5391 175.4435)" class="st1 st2 st3">臺北</text>
+      </a>
+      <a href=" javascript:void(0);">
+       
+        <path id="新北市" class="st0" d="M364.9,188.1L364.9,188.1v-38.8c0-2.8,2.3-5,5-5h84.6v43.8H364.9z"></path>
+        <text transform="matrix(1 0 0 1 384.7734 175.4435)" class="st1 st2 st3">新北</text>
+      </a>
+      <a href=" javascript:void(0);">
+       
+        <path id="桃園市" class="st0" d="M340.7,235v-0.1v-35.6c0-2.8,2.3-5,5-5h108.9V235L340.7,235L340.7,235z"></path>
+        <text transform="matrix(1 0 0 1 373.6865 224.1622)" class="st1 st2 st3">桃園</text>
+      </a>
+      <a href=" javascript:void(0);">   
+        <path id="新竹市" class="st0" d="M303.6,285v-0.1v-38.7c0-2.8,2.3-5,5-5h53.7V285H303.6z"></path>
+        <text transform="matrix(1 0 0 1 309.5029 272.88)" class="st1 st2 st3">竹市</text>
+      </a>
+      <a href=" javascript:void(0);">    
+      
+        <path id="苗栗縣" class="st0" d="M291.2,337.6v-0.1v-41.8c0-2.8,2.3-5,5-5h158.4v46.9H291.2z"></path>
+        <text transform="matrix(1 0 0 1 350.877 322.7603)" class="st1 st2 st3">苗栗縣</text>
+      </a>
+      <a href=" javascript:void(0);"> 
+     
+        <path id="臺中市" class="st0" d="M273.1,390.7v-0.1v-41.8c0-2.8,2.3-5,5-5h130.5v46.9H273.1z"></path>
+        <text transform="matrix(1 0 0 1 318.3984 376.1183)" class="st1 st2 st3">臺中</text>
+        </a>
+        <a href=" javascript:void(0);"> 
+        <path id="臺南市" class="st0" d="M201.5,602.6v61.5c0,2.8,2.3,5,5,5h110.3v-66.5H201.5z"></path>
+        <text transform="matrix(1 0 0 1 237.1982 644.8473)" class="st1 st2 st3">臺南</text>
+      </a>
+        <a href=" javascript:void(0);"> 
+       
+        <path id="宜蘭縣" class="st0" d="M570.2,193.8v0.1v137.5c0,2.8-2.3,5-5,5H460.9V193.8H570.2z"></path>
+        <text transform="matrix(1 0 0 1 490.0723 272.88)" class="st1 st2 st3">宜蘭</text>
+      </a>
+        <a href=" javascript:void(0);"> 
+       
+        <path id="花蓮縣" class="st0" d="M535.3,343.8v0.1v247.4c0,2.8-2.3,5-5,5H414.9V343.8H535.3z"></path>
+        <text transform="matrix(1 0 0 1 451.4063 478.5821)" class="st1 st2 st3">花蓮</text>
+      </a>
+        <a href=" javascript:void(0);"> 
+      
+        <path id="嘉義縣" class="st0" d="M228,550.4L228,550.4v46h180.5v-46H228z"></path>
+        <text transform="matrix(1 0 0 1 295.5811 582.983)" class="st1 st2 st3">嘉義縣</text>
+      </a>
+        <a href=" javascript:void(0);">  
+        
+        <path id="雲林縣" class="st0" d="M190.7,544.3v-50.7c0-2.8,2.3-5,5-5H306v55.7H190.7z"></path>
+        <text transform="matrix(1 0 0 1 226.7578 525.3717)" class="st1 st2 st3">雲林</text>
+      </a>
+        <a href=" javascript:void(0);">   
+       
+        <path id="彰化" class="st0" d="M231.3,483v-0.1V403c0-2.8,2.3-5,5-5H306v85.1h-74.7V483z"></path>
+        <text transform="matrix(1 0 0 1 245.3184 449.9698)" class="st1 st2 st3">彰化</text>
+        </a>
+        <a href=" javascript:void(0);">  
+     
+        <path id="南投縣" class="st0" d="M312,397.6L312,397.6v146h96v-146H312z"></path>  
+         <text transform="matrix(1 0 0 1 337.3418 478.5821)" class="st1 st2 st3">南投</text>
+      </a>
+      <a href=" javascript:void(0);">
+     
+        <path id="新竹縣" class="st0" d="M368,284.6v-44.5h86.5v44.5h-63.3H368z"></path>
+        <text transform="matrix(1 0 0 1 385.2891 272.88)" class="st1 st2 st3">竹縣</text>
+        </a>
+        <a href=" javascript:void(0);">   
+       
+        <path id="連江縣" class="st0" d="M120.4,116.9H62.7c-0.9,0-1.6-0.7-1.6-1.6V74.2c0-0.9,0.7-1.6,1.6-1.6h57.7
+          c0.9,0,1.6,0.7,1.6,1.6v41.2C122,116.2,121.3,116.9,120.4,116.9z"></path>
+          <text transform="matrix(1 0 0 1 66.2935 104.2984)" class="st1 st2 st3">連江</text>
+        </a>   
+          <a href=" javascript:void(0);">      
+        
+        <path id="金門縣" class="st0" d="M83.3,389.1H25.6c-0.9,0-1.6-0.7-1.6-1.6v-41.2c0-0.9,0.7-1.6,1.6-1.6h57.7
+          c0.9,0,1.6,0.7,1.6,1.6v41.3C84.9,388.4,84.1,389.1,83.3,389.1z"></path>  
+          <text transform="matrix(1 0 0 1 29.5615 376.1183)" class="st1 st2 st3">金門</text>
+    </a>
+          <a href=" javascript:void(0);">  
+           
+        <path id="澎湖縣" class="st0" d="M125,594.3H67.4c-0.9,0-1.6-0.7-1.6-1.6v-41.1c0-0.9,0.7-1.6,1.6-1.6H125c0.9,0,1.6,0.7,1.6,1.6
+          v41.2C126.6,593.6,125.9,594.3,125,594.3z"></path> <text transform="matrix(1 0 0 1 70.9341 582.983)" class="st1 st2 st3">澎湖</text>
+        </a>
+          <a href=" javascript:void(0);">  
+        <path id="屏東縣" class="st0" d="M261.9,746.4v39.8c0,2.8,2.3,5,5,5h86.6v101c0,2.7,2.2,4.9,4.9,4.9h54.1c2.7,0,4.9-2.2,4.9-4.9
+          v-101v-17.5v-27.3H261.9z"> </path> 
+          <text transform="matrix(1 0 0 1 319.5576 776.6998)" class="st1 st2 st3">屏東縣</text>
+        </a>
+          <a href=" javascript:void(0);">    
+         
+        <path id="嘉義市" class="st0" d="M222.2,550.4h-50.7c-2.7,0-4.9,2.2-4.9,4.9v36c0,2.7,2.2,4.9,4.9,4.9h50.7V550.4z"></path>
+        <text transform="matrix(1 0 0 1 170.3047 582.983)" class="st1 st2 st3">嘉市</text>
+        </a>
+        <a href=" javascript:void(0);"> 
+       
+        <path id="高雄市" class="st0" d="M323,602.6v73.7h-89.6v58.4c0,2.8,2.3,5,5,5h141.3V602.6H323z"></path> 
+        <text transform="matrix(1 0 0 1 288.623 715.9938)" class="st1 st2 st3">高雄市</text>
+      </a>
+        <a href=" javascript:void(0);"> 
+         
+        <path id="臺東縣" class="st0" d="M386.3,602.6v44.2V667v72.2h56.6c3.9,0,7.1-3.2,7.1-7.1v-65h45.6c3.9,0,7.1-3.2,7.1-7.1v-57.4
+          H386.3z"></path> 
+          <text transform="matrix(1 0 0 1 417.3799 644.8473)" class="st1 st2 st3">臺東縣</text>
+        </a>
+          <a href=" javascript:void(0);">
+         
+        <path id="基隆" class="st0" d="M514.4,138.7v-33.1c0-2.7-2.2-4.9-4.9-4.9h-43.6c-2.7,0-4.9,2.2-4.9,4.9v33.2L514.4,138.7
+          L514.4,138.7z"></path> 
+          <text transform="matrix(1 0 0 1 463.1367 129.0445)" class="st1 st2 st3">基隆</text>
+        </a>
+      </svg>
+                </div>
+                <div class="contain_t1">
+                    <!-- <ul class="information_select_1">
+                        <li>
+                            <a href="#"> 公辦工業區  </a>
+                        </li>
+                        <li>
+                            <a href="#"> 地方政府開發</a>
+                        </li>
+                        <li>
+                            <a href="#">環保科技園區
+
+                    </a>
+                        </li>
+                        <li>
+                            <a href="#">農業生物科技園區 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 加工出口區
+                  </a>
+                        </li>
+                        <li>
+                            <a href="#">科學園區
+
+
+                  </a>
+                        </li>
+                        <li>
+
+                            <a href="#">民間自辦 </a>
+                        </li>
+
+                    </ul> -->
+                    <ul class="information_select_1">
+                        <li>
+                            <div class="area">
+                                <h4 class="cause3">廢棄物收受量
+
+                                </h4>
+                                <h5 class="number">248,843,214<span class="weight">(噸)</h3></h5>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="area">
+                          <h4 class="cause3">產品產生量
+
+
+                          </h4>
+                          <h5 class="number">248,843,214<span class="weight">(噸)</h3></h5>
+                </div>
+                      </li>
+                      <li>
+                        <div class="area">
+                          <h4 class="cause3">產品庫存量
+
+
+
+                          </h4>
+                          <h5 class="number">248,843,214<span class="weight">(噸)</h3></h5>
+                </div>
+                      </li>
+                      </ul>
+                    <div class="contain_t2">
+
+                        <div class="chart_block">
+                            <h2>廢棄物收受量排名
+                            </h2>
+                            <div class="Ranking_b">
+                                <table class="Ranking">
+                                  <thead>
+                                      <tr>
+                                          <th>#</th>
+                                          <th>機構名稱</th>
+                                          <th>縣市別</th>
+                                          <th>貯存量</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>1</td>
+                                          <td>XXX公司</td>
+                                          <td>新北市</td>
+                                          <td>102,424</td>
+                                      </tr>
+                                      <tr>
+                                          <td>2</td>
+                                          <td>YYY公司</td>
+                                          <td>高雄市</td>
+                                          <td>82,135</td>
+                                      </tr>
+                                      <tr>
+                                          <td>3</td>
+                                          <td>ZZZ公司</td>
+                                          <td>台中市</td>
+                                          <td>71,864</td>
+                                      </tr>
+                                      <tr>
+                                          <td>4</td>
+                                          <td>AAA公司</td>
+                                          <td>台北市</td>
+                                          <td>70,634</td>
+                                      
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>AAA公司</td>
+                                        <td>台北市</td>
+                                        <td>70,634</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>6</td>
+                                      <td>AAA公司</td>
+                                      <td>台北市</td>
+                                      <td>70,634</td>
+                                     
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>AAA公司</td>
+                                    <td>台北市</td>
+                                    <td>70,634</td>
+                                   
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>AAA公司</td>
+                                  <td>台北市</td>
+                                  <td>70,634</td>
+                              
+                              </tr>
+                                  </tbody>
+                              </table>
+                            </div>
+                        </div>
+                        <div class="chart_block">
+                            <h2>廢棄物收受量趨勢
+                            </h2>
+                            <div>塞圖表</div>
+                        </div>
+                        <div class="chart_block">
+                            <h2>處理機構產品產生及庫存量排名
+
+                            </h2>
+                            <div class="Ranking_b">
+                                <table class="Ranking">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>機構名稱         </th>
+                                        <th>縣市別    </th>
+                                        <th>產生量</th>
+                                        <th>庫存量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>XXX公司</td>
+                                        <td>新北市</td>
+                                        <td>102,424</td>
+                                        <td>65,137</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>YYY公司</td>
+                                        <td>高雄市</td>
+                                        <td>82,135</td>
+                                        <td>51,813</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>ZZZ公司</td>
+                                        <td>台中市</td>
+                                        <td>71,864</td>
+                                        <td>43,951</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>AAA公司</td>
+                                        <td>台北市</td>
+                                        <td>70,634</td>
+                                        <td>40,137</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5</td>
+                                      <td>AAA公司</td>
+                                      <td>台北市</td>
+                                      <td>70,634</td>
+                                      <td>40,137</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>AAA公司</td>
+                                    <td>台北市</td>
+                                    <td>70,634</td>
+                                    <td>40,137</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                          
+                          </div>
+                        </div>
+                        <div class="chart_block">
+                            <h2>產生及庫存量趨勢
+
+                            </h2>
+                            <div style="height: 230px; display: grid;place-content: center;">塞圖表</div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+            </section>
+            <div class="contain_t3">
+
+                <div class="chart_block">
+                    <h2>產品排名
+
+                    </h2>
+                    <div class="Ranking_b">
+                        <table class="Ranking">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>產品名稱     </th>
+                                  <th>產出量</th>
+                                  <th>貯存量</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>XXX公司</td>
+                                  <td>新北市</td>
+                                  <td>102,424</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>YYY公司</td>
+                                  <td>高雄市</td>
+                                  <td>82,135</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>ZZZ公司</td>
+                                  <td>台中市</td>
+                                  <td>71,864</td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>AAA公司</td>
+                                  <td>台北市</td>
+                                  <td>70,634</td>
+                              
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>AAA公司</td>
+                                <td>台北市</td>
+                                <td>70,634</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>AAA公司</td>
+                              <td>台北市</td>
+                              <td>70,634</td>
+                             
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>AAA公司</td>
+                            <td>台北市</td>
+                            <td>70,634</td>
+                           
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>AAA公司</td>
+                          <td>台北市</td>
+                          <td>70,634</td>
+                      
+                      </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+                <div class="chart_block">
+                    <h2>廢棄物收受量趨勢
+                    </h2>
+                    <div>塞圖表</div>
+                </div>
+                <div class="chart_block">
+                    <h2>產品庫存占比圖
+
+
+                    </h2>
+                    <div>塞圖表</div>
+                </div>
+             
+              
+            </div>
+
+            </section>
+        </div>
+
+    </div>
+    <footer>
+
+        <div class="footerwapper ">
+            <a href="#B " id="AB " name="B " title="下方網站資訊 " accesskey="B ">:::</a>
+            <div class="footerTXT " aria-label="footermenu ">
+                環境部資源循環署 版權所有<br> 100006臺北市中正區中華路一段83號
+                <br> 電話：02-23117722
+                <br>
+                <a href="/login/WebMap.htm " target="_blank " class="white ">網站導覽</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/41156C14CC997554 " target="_blank " class="white ">隱私權保護政策</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/981903047CA6500B " target="_blank " class="white ">資訊安全規範</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/80191639AC8FA886 " target="_blank " class="white ">資訊安全政策</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/A33D3A6556ABFCD2 " target="_blank " class="white ">網站資料開放宣告</a>&nbsp;|&nbsp;
+                <a href="https://epamail.epa.gov.tw/Front/MailBoxHome " target="_blank " class="white ">意見信箱</a>
+                <br>
+                <p><span id="lupdate ">更新日期:2023/9/28</span></p>
+                            </div>
+                            <div class="accessibility "><img src="images/accessibilityA.png " width="88 " height="31 " alt="通過A等級無障礙網頁檢測 " /></div>
+                </div>
+                </footer>
+                <script src="js/jquery.min.js "></script>
+                <script src="js/bootstrap.bundle.min.js "></script>
+                <script src="js/main.js "></script>
+</body>
+
+</html>

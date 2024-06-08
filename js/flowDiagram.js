@@ -1,24 +1,46 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".toggle-structure-three");
-    var blocks = document.querySelectorAll(".structure-three-ul", "fa-solid");
+    var icons = document.querySelectorAll(".sub-arrow");
+    var blocks = document.querySelectorAll(".structure-three-ul");
 
-    buttons.forEach(function(button) {
-        button.addEventListener("click", function() {
-            // Get the targeted block
+    buttons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
             var targetId = button.getAttribute("data-target");
-            var targetBlock = document.getElementById(targetId);
 
-            // Toggle the visibility of the targeted block
-            if (targetBlock.classList.contains("hidden")) {
-                // Hide all blocks
-                blocks.forEach(function(block) {
+            // Toggle the visibility of the targeted block and remove active class from other blocks and buttons
+            blocks.forEach(function (block) {
+                if (block.id === targetId) {
+                    block.classList.toggle("hidden");
+                } else {
                     block.classList.add("hidden");
-                });
-                // Show the targeted block
-                targetBlock.classList.remove("hidden");
+                }
+                block.classList.remove("active"); // Remove active class from all blocks
+            });
+
+            // Toggle the visibility of the corresponding icon
+            icons.forEach(function (icon, iconIndex) {
+                if (index === iconIndex) {
+                    icon.classList.toggle("hidden");
+                } else {
+                    icon.classList.add("hidden");
+                }
+            });
+
+            // Remove active class from all buttons except the clicked one
+            buttons.forEach(function (otherButton) {
+                if (otherButton !== button) {
+                    otherButton.classList.remove("active");
+                }
+            });
+
+            // Toggle the active class for the clicked button
+            button.classList.toggle("active");
+
+            // Add or remove additional class based on the index
+            if (button.classList.contains("active")) {
+                button.classList.add("active-style-" + index); // Add unique style class
             } else {
-                // Hide the targeted block
-                targetBlock.classList.add("hidden");
+                button.classList.remove("active-style-" + index); // Remove style class if button is not active
             }
         });
     });

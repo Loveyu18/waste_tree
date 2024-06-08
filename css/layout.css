@@ -1248,6 +1248,7 @@
 
     /* 循環流向圖 */
     .flow-diagram {
+        position: relative;
         align-items: center;
         color: #fff;
         gap: 15px;
@@ -1264,6 +1265,7 @@
     }
 
     .flow-diagram-wrap {
+        position: relative;
         width: 100%;
         height: 700px;
         display: grid;
@@ -1272,9 +1274,14 @@
         align-items: center;
     }
 
+
     .structure-one {
         margin: auto;
+        position: relative;
+        cursor: pointer;
     }
+
+
 
     .structure-two ul {
         display: flex;
@@ -1284,13 +1291,45 @@
         gap: 30px
     }
 
-    .toggle-structure-three{
+    .toggle-structure-three {
         position: relative;
     }
-    .toggle-structure-three i{
-        position: absolute;
-        right: -30px;
+
+    .toggle-structure-three.active,
+    .structure-three-ul li{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
     }
+
+    .toggle-structure-three.active.active-style-0,
+    #block-1 li {
+        background-color: #d39f9f5d;
+    }
+
+    .toggle-structure-three.active.active-style-1,
+    #block-2 li {
+        background-color: #c0bc7349;
+    }
+
+    .toggle-structure-three.active.active-style-2,
+    #block-3 li {
+        background-color: #509e4949;
+    }
+
+    .toggle-structure-three.active.active-style-3,
+    #block-4 li {
+        background-color: #515ab156;
+    }
+
+
+
+    .structure-one i,
+    .toggle-structure-three i {
+        position: absolute;
+        right: -50px;
+        font-size: 1.5rem;
+    }
+
     .toggle-structure-three,
     .structure-three-li {
         cursor: pointer;
@@ -1312,18 +1351,17 @@
 
     }
 
+
     .structure-two ul li:hover {
         background: rgba(255, 255, 2255, 0.3);
     }
 
+    .toggle-structure-three .hidden,
     .structure-three .hidden {
         display: none;
     }
 
-    .structure-three {
-     
 
-    }
 
     .structure-three-ul {
         position: relative;
@@ -1334,7 +1372,7 @@
         gap: 20px;
         padding-left: 20px;
     }
- 
+
 
     .structure-three-li {
         position: relative;
@@ -1344,11 +1382,10 @@
         border-radius: 8px;
         background: rgba(255, 255, 2255, 0.15);
         transition: 0.3s;
-  
-
     }
 
-    .structure-three-li:hover, .structure-four-li:hover {
+    .structure-three-li:hover,
+    .structure-four-li:hover {
         background: rgba(255, 255, 2255, 0.3);
     }
 
@@ -1362,6 +1399,7 @@
         color: #fff;
         gap: 5px;
     }
+
     .structure-four-ul {
         position: absolute;
         right: -200px;
@@ -1371,7 +1409,8 @@
         align-items: center;
         transform: translateY(-50%);
     }
-    .structure-four-li-wrap{
+
+    .structure-four-li-wrap {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -1379,7 +1418,7 @@
     }
 
 
-    .structure-four-li{
+    .structure-four-li {
         border: 1px solid rgba(255, 255, 255, 0.24);
         width: 150px;
         height: 70px;
@@ -1387,4 +1426,3 @@
         background: rgba(255, 255, 2255, 0.15);
         transition: 0.3s;
     }
-

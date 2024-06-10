@@ -1,641 +1,659 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="zh-Hant-TW">
-    <head>
-        <meta charset="utf-8" />
 
-        <title>事業廢棄物流向分析系統</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="images/favicon.png" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/layout.css" rel="stylesheet" type="text/css" />
-        <link href="css/mobile.css" rel="stylesheet" type="text/css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    </head>
+<head>
+    <meta charset="utf-8" />
 
-    <body>
-        <a href="#accesskey_C" class="sr-only sr-only-focusable" title="跳到主要內容區塊" tabindex="1" id="linkGotoContent">跳到主要內容區塊</a>
-        <div id="wrapper">
-            <!-- 上面資訊 -->
-            <header>
-                <h1>
-                    <a href="index.html">
-                        <img src="images/title_logo.svg" alt="事業廢棄物流向分析系統" />
-                    </a>
-                </h1>
-            </header>
-            <!-- 上面資訊 end -->
+    <title>事業廢棄物流向分析系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-            <main class="pagemain">
-                <a title="內容區" name="content" href="#content" accesskey="C" class="sr-only">:::</a>
-                <!-- 上方選單 -->
-                <div class="leftsideBar">
-                    <div class="headbar">
-                        <ul id="menu">
-                            <li>
-                                <div><a href="#">○○○o您好</a></div>
-                            </li>
-                            <li>
-                                <a href="#">帳號維護</a>
-                                <ul class="submenu">
-                                    <li><a href="#">個人資料維護</a></li>
-                                    <li><a href="#">密碼設定</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">登出</a></li>
-                        </ul>
+<body>
+    <a href="#accesskey_C" class="sr-only sr-only-focusable" title="跳到主要內容區塊" tabindex="1"
+        id="linkGotoContent">跳到主要內容區塊</a>
+    <div id="wrapper">
+        <!-- 上面資訊 -->
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img src="images/title_logo.svg" alt="事業廢棄物流向分析系統" />
+                </a>
+            </h1>
+        </header>
+        <!-- 上面資訊 end -->
 
-                        <script>
-                            // 确保文档完全加载后执行代码
-                            document.addEventListener("DOMContentLoaded", function () {
-                                const liItems = document.querySelectorAll("#menu li");
+        <main class="pagemain">
+            <a title="內容區" name="content" href="#content" accesskey="C" class="sr-only">:::</a>
+            <!-- 上方選單 -->
+            <div class="leftsideBar">
+                <div class="headbar">
+                    <ul id="menu">
+                        <li>
+                            <div><a href="#">○○○o您好</a></div>
+                        </li>
+                        <li>
+                            <a href="#">帳號維護</a>
+                            <ul class="submenu">
+                                <li><a href="#">個人資料維護</a></li>
+                                <li><a href="#">密碼設定</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
 
-                                liItems.forEach((li) => {
-                                    li.addEventListener("mouseenter", () => {
-                                        li.querySelector(".submenu").style.display = "block";
-                                    });
+                    <script>
+                        // 确保文档完全加载后执行代码
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const liItems = document.querySelectorAll("#menu li");
 
-                                    li.addEventListener("mouseleave", () => {
-                                        li.querySelector(".submenu").style.display = "none";
-                                    });
+                            liItems.forEach((li) => {
+                                li.addEventListener("mouseenter", () => {
+                                    li.querySelector(".submenu").style.display = "block";
+                                });
+
+                                li.addEventListener("mouseleave", () => {
+                                    li.querySelector(".submenu").style.display = "none";
                                 });
                             });
-                        </script>
-                    </div>
+                        });
+                    </script>
                 </div>
-                <!-- 左邊資訊  -->
+            </div>
+            <!-- 左邊資訊  -->
 
-                <!-- 右邊 -->
-                <div class="rightsideBar">
-                    <div class="headbar">
-                        <ul id="menu">
-                            <li>
-                                <div><a href="#">系統管理</a>/</div>
-                            </li>
-                            <li>
-                                <div><a href="#">回上一頁</a></div>
-                            </li>
-                        </ul>
+            <!-- 右邊 -->
+            <div class="rightsideBar">
+                <div class="headbar">
+                    <ul id="menu">
+                        <li>
+                            <div><a href="#">系統管理</a>/</div>
+                        </li>
+                        <li>
+                            <div><a href="#">回上一頁</a></div>
+                        </li>
+                    </ul>
 
-                        <script>
-                            // 确保文档完全加载后执行代码
-                            document.addEventListener("DOMContentLoaded", function () {
-                                const liItems = document.querySelectorAll("#menu li");
+                    <script>
+                        // 确保文档完全加载后执行代码
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const liItems = document.querySelectorAll("#menu li");
 
-                                liItems.forEach((li) => {
-                                    li.addEventListener("mouseenter", () => {
-                                        li.querySelector(".submenu").style.display = "block";
-                                    });
+                            liItems.forEach((li) => {
+                                li.addEventListener("mouseenter", () => {
+                                    li.querySelector(".submenu").style.display = "block";
+                                });
 
-                                    li.addEventListener("mouseleave", () => {
-                                        li.querySelector(".submenu").style.display = "none";
-                                    });
+                                li.addEventListener("mouseleave", () => {
+                                    li.querySelector(".submenu").style.display = "none";
                                 });
                             });
-                        </script>
-                    </div>
+                        });
+                    </script>
                 </div>
-                <!-- 右邊 -->
-            </main>
+            </div>
+            <!-- 右邊 -->
+        </main>
 
-            <div class="centered-content">
-                <div class="singlebar">事業廢棄物</div>
-                <img src="images/a2.svg" alt="廢" style="margin-bottom: 15px; display: flex; justify-content: start" />
-                <section class="waste_block">
-                    <section class="flow-diagram">
-                        <h2>循環流向圖</h2>
-                        <ul class="flow-diagram-wrap" id="flow-diagram-wrap">
-                            <li class="structure-one">
-                                <i class="fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                <div>廢棄物</div>
-                                <div>122.33<span>噸</span></div>
-                            </li>
-                            <li class="structure-two">
-                                <ul>
-                                    <li class="toggle-structure-three" data-target="block-1">
-                                        <i class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
-                                        <div>工業/科學園區</div>
+        <div class="centered-content">
+            <div class="singlebar">事業廢棄物</div>
+            <img src="images/a2.svg" alt="廢" style="margin-bottom: 15px; display: flex; justify-content: start" />
+            <section class="waste_block">
+                <section class="flow-diagram">
+                    <h2>循環流向圖</h2>
+                    <div class="information_select" style="margin-top: 0">
+                        請選擇年度：
+                        <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
+                            <option value="0" selected="'selected'">2023</option>
+                            <option value="1">2024</option>
+                        </select>
+                      
+                    </div>
+                    <ul class="flow-diagram-wrap" id="flow-diagram-wrap">
+                        <li class="structure-one">
+                            <i
+                                class="fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                            <div>廢棄物</div>
+                            <div class="waste-count">122.33<span>噸</span></div>
+                        </li>
+                        <li class="structure-two">
+                            <ul>
+                                <li class="toggle-structure-three" data-target="block-1">
+                                    <i
+                                        class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
+                                    <div>工業/科學園區</div>
+                                    <div>12.9983<span>噸</span></div>
+                                </li>
+                                <li class="toggle-structure-three" data-target="block-2">
+                                    <i
+                                        class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
+                                    <div>營建</div>
+                                    <div>12.9983<span>噸</span></div>
+                                </li>
+                                <li class="toggle-structure-three" data-target="block-3">
+                                    <i
+                                        class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
+                                    <div>農業</div>
+                                    <div>12.9983<span>噸</span></div>
+                                </li>
+                                <li class="toggle-structure-three" data-target="block-4">
+                                    <i
+                                        class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
+                                    <div>其他</div>
+                                    <div>12.9983<span>噸</span></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="structure-three">
+                            <ul id="block-1" class="structure-three-ul hidden">
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>可燃</div>
                                         <div>12.9983<span>噸</span></div>
-                                    </li>
-                                    <li class="toggle-structure-three" data-target="block-2">
-                                        <i class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
-                                        <div>營建</div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>污泥</div>
+                                        <div>2663757.314<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有害性污泥</div>
+                                                    <div>116882.8822<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有機性污泥</div>
+                                                    <div>1294072.928<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>無機性污泥</div>
+                                                    <div>1252801.503<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>灰渣</div>
                                         <div>12.9983<span>噸</span></div>
-                                    </li>
-                                    <li class="toggle-structure-three" data-target="block-3">
-                                        <i class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
-                                        <div>農業</div>
-                                        <div>12.9983<span>噸</span></div>
-                                    </li>
-                                    <li class="toggle-structure-three" data-target="block-4">
-                                        <i class="sub-arrow fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite hidden"></i>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
                                         <div>其他</div>
                                         <div>12.9983<span>噸</span></div>
-                                    </li>
-                                </ul>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>金屬</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>食品加工</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>溶劑及廢酸鹼</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>溶劑</div>
+                                                    <div>808630.7252<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>廢酸鹼</div>
+                                                    <div>649797.0052<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>爐碴</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="block-2" class="structure-three-ul hidden">
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>可燃</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>污泥</div>
+                                        <div>2663757.314<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有害性污泥</div>
+                                                    <div>116882.8822<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有機性污泥</div>
+                                                    <div>1294072.928<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>無機性污泥</div>
+                                                    <div>1252801.503<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>灰渣</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>其他</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>金屬</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>食品加工</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>溶劑及廢酸鹼</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>溶劑</div>
+                                                    <div>808630.7252<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>廢酸鹼</div>
+                                                    <div>649797.0052<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>爐碴</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="block-3" class="structure-three-ul hidden">
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>可燃</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>污泥</div>
+                                        <div>2663757.314<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有機性污泥</div>
+                                                    <div>1294072.928<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>灰渣</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>其他</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>金屬</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>食品加工</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>溶劑及廢酸鹼</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>廢酸鹼</div>
+                                                    <div>649797.0052<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>爐碴</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="block-4" class="structure-three-ul hidden">
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>可燃</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>污泥</div>
+                                        <div>2663757.314<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>有機性污泥</div>
+                                                    <div>1294072.928<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>無機性污泥</div>
+                                                    <div>1252801.503<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>灰渣</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>其他</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>金屬</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>食品加工</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>溶劑及廢酸鹼</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                    <ul class="structure-four-ul">
+                                        <i
+                                            class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
+                                        <div class="structure-four-li-wrap">
+                                            <li class="structure-four-li">
+                                                <a href="#">
+                                                    <div>溶劑</div>
+                                                    <div>808630.7252<span>噸</span></div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="structure-three-li">
+                                    <a href="#">
+                                        <div>爐碴</div>
+                                        <div>12.9983<span>噸</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="news_b news_b2">
+                    <h2>重點事業廢棄物 <a class="report_download" href="">報告下載</a></h2>
+                    <ul class="download_b">
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>一般淤泥</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>有害淤泥</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>集塵灰</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>爐渣</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>醫療</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>廢酸鹼</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>有機廢液</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>多氯聯苯</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="txt_btn" href="#">
+                                <span>灰渣</span>
+                                <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="news_b_1">
+                    <section class="news_b news_b2">
+                        <h2>主題案例分析</h2>
+                        <ul class="download_b">
+                            <li>
+                                <a class="txt_btn" href="#">
+                                    <span>廢液</span>
+                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                                </a>
                             </li>
-                            <li class="structure-three">
-                                <ul id="block-1" class="structure-three-ul hidden">
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>可燃</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>污泥</div>
-                                            <div>2663757.314<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有害性污泥</div>
-                                                        <div>116882.8822<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有機性污泥</div>
-                                                        <div>1294072.928<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>無機性污泥</div>
-                                                        <div>1252801.503<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>灰渣</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>其他</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>金屬</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>食品加工</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>溶劑及廢酸鹼</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>溶劑</div>
-                                                        <div>808630.7252<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>廢酸鹼</div>
-                                                        <div>649797.0052<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>爐碴</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul id="block-2" class="structure-three-ul hidden">
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>可燃</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>污泥</div>
-                                            <div>2663757.314<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有害性污泥</div>
-                                                        <div>116882.8822<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有機性污泥</div>
-                                                        <div>1294072.928<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>無機性污泥</div>
-                                                        <div>1252801.503<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>灰渣</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>其他</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>金屬</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>食品加工</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>溶劑及廢酸鹼</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>溶劑</div>
-                                                        <div>808630.7252<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>廢酸鹼</div>
-                                                        <div>649797.0052<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>爐碴</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul id="block-3" class="structure-three-ul hidden">
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>可燃</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>污泥</div>
-                                            <div>2663757.314<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有機性污泥</div>
-                                                        <div>1294072.928<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>灰渣</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>其他</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>金屬</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>食品加工</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>溶劑及廢酸鹼</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>廢酸鹼</div>
-                                                        <div>649797.0052<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>爐碴</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul id="block-4" class="structure-three-ul hidden">
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>可燃</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>污泥</div>
-                                            <div>2663757.314<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>有機性污泥</div>
-                                                        <div>1294072.928<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>無機性污泥</div>
-                                                        <div>1252801.503<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>灰渣</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>其他</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>金屬</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>食品加工</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>溶劑及廢酸鹼</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                        <ul class="structure-four-ul">
-                                            <i class="structure-four-ul-icon fa-solid fa-angles-right animate__animated animate__fadeInLeft animate__infinite"></i>
-                                            <div class="structure-four-li-wrap">
-                                                <li class="structure-four-li">
-                                                    <a href="#">
-                                                        <div>溶劑</div>
-                                                        <div>808630.7252<span>噸</span></div>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="structure-three-li">
-                                        <a href="#">
-                                            <div>爐碴</div>
-                                            <div>12.9983<span>噸</span></div>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a class="txt_btn" href="#">
+                                    <span>食品污泥</span>
+                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
+                                </a>
                             </li>
                         </ul>
                     </section>
                     <section class="news_b news_b2">
-                        <h2>重點事業廢棄物 <a class="report_download" href="">報告下載</a></h2>
+                        <h2>主題案例分析</h2>
                         <ul class="download_b">
                             <li>
                                 <a class="txt_btn" href="#">
-                                    <span>一般淤泥</span>
+                                    <span>化學品</span>
                                     <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
                                 </a>
                             </li>
                             <li>
                                 <a class="txt_btn" href="#">
-                                    <span>有害淤泥</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>集塵灰</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>爐渣</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>醫療</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>廢酸鹼</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>有機廢液</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>多氯聯苯</span>
-                                    <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="txt_btn" href="#">
-                                    <span>灰渣</span>
+                                    <span>金屬</span>
                                     <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
                                 </a>
                             </li>
                         </ul>
                     </section>
-                    <section class="news_b_1">
-                        <section class="news_b news_b2">
-                            <h2>主題案例分析</h2>
-                            <ul class="download_b">
-                                <li>
-                                    <a class="txt_btn" href="#">
-                                        <span>廢液</span>
-                                        <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="txt_btn" href="#">
-                                        <span>食品污泥</span>
-                                        <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="news_b news_b2">
-                            <h2>主題案例分析</h2>
-                            <ul class="download_b">
-                                <li>
-                                    <a class="txt_btn" href="#">
-                                        <span>化學品</span>
-                                        <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="txt_btn" href="#">
-                                        <span>金屬</span>
-                                        <div class="book_download"><img src="./images/book_download.svg" alt="下載按鈕" /></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="news_b news_b2">
-                            <h2>智慧化報表生成器</h2>
-                            <div class="information_select" style="margin-top: 0">
-                                時間：
-
-                                <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
-                                    <option value="0" selected="'selected'">108年</option>
-                                    <option value="3">108年</option>
-                                </select>
-                                至
-                                <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
-                                    <option value="0" selected="'selected'">108年</option>
-                                    <option value="3">108年</option>
-                                </select>
-                            </div>
-                            <div class="information_select" style="margin-top: 0">
-                                廢棄物代碼/名稱
-
-                                <input
-                                    type="text"
-                                    id="txt_seach"
-                                    accesskey="S"
-                                    class="text KeyWord"
-                                    placeholder="請選擇廢棄物
-                      "
-                                    title="請選擇廢棄物"
-                                    data-listener-added_8f861d35="true"
-                                />
-
-                                <a class="newsbtn" href="#">
-                                    <div>查詢</div>
-                                </a>
-                            </div>
-                        </section>
+                    <section class="news_b news_b2">
+                        <h2>智慧化報表生成器</h2>
+                        <div class="information_select" style="margin-top: 0">
+                            時間：
+                            <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
+                                <option value="0" selected="'selected'">108年</option>
+                                <option value="3">108年</option>
+                            </select>
+                            至
+                            <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
+                                <option value="0" selected="'selected'">108年</option>
+                                <option value="3">108年</option>
+                            </select>
+                        </div>
+                        <div class="information_select" style="margin-top: 0">
+                            廢棄物代碼/名稱
+                            <input type="text" id="txt_seach" accesskey="S" class="text KeyWord" placeholder="請選擇廢棄物" title="請選擇廢棄物" ata-listener-added_8f861d35="true" />
+                            <a class="newsbtn" href="#">
+                                <div>查詢</div>
+                            </a>
+                        </div>
                     </section>
                 </section>
-            </div>
+            </section>
         </div>
-        <footer>
-            <div class="footerwapper">
-                <a href="#B " id="AB " name="B " title="下方網站資訊 " accesskey="B ">:::</a>
-                <div class="footerTXT" aria-label="footermenu ">
-                    環境部資源循環署 版權所有<br />
-                    100006臺北市中正區中華路一段83號 <br />
-                    電話：02-23117722
-                    <br />
-                    <a href="/login/WebMap.htm " target="_blank " class="white">網站導覽</a>&nbsp;|&nbsp; <a href="https://www.epa.gov.tw/Page/41156C14CC997554 " target="_blank " class="white">隱私權保護政策</a>&nbsp;|&nbsp;
-                    <a href="https://www.epa.gov.tw/Page/981903047CA6500B " target="_blank " class="white">資訊安全規範</a>&nbsp;|&nbsp;
-                    <a href="https://www.epa.gov.tw/Page/80191639AC8FA886 " target="_blank " class="white">資訊安全政策</a>&nbsp;|&nbsp;
-                    <a href="https://www.epa.gov.tw/Page/A33D3A6556ABFCD2 " target="_blank " class="white">網站資料開放宣告</a>&nbsp;|&nbsp;
-                    <a href="https://epamail.epa.gov.tw/Front/MailBoxHome " target="_blank " class="white">意見信箱</a>
-                    <br />
-                    <p><span id="lupdate ">更新日期:2023/9/28</span></p>
-                </div>
-                <div class="accessibility"><img src="images/accessibilityA.png " width="88 " height="31 " alt="通過A等級無障礙網頁檢測 " /></div>
+    </div>
+    <footer>
+        <div class="footerwapper">
+            <a href="#B " id="AB " name="B " title="下方網站資訊 " accesskey="B ">:::</a>
+            <div class="footerTXT" aria-label="footermenu ">
+                環境部資源循環署 版權所有<br />
+                100006臺北市中正區中華路一段83號 <br />
+                電話：02-23117722
+                <br />
+                <a href="/login/WebMap.htm " target="_blank " class="white">網站導覽</a>&nbsp;|&nbsp; <a
+                    href="https://www.epa.gov.tw/Page/41156C14CC997554 " target="_blank "
+                    class="white">隱私權保護政策</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/981903047CA6500B " target="_blank "
+                    class="white">資訊安全規範</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/80191639AC8FA886 " target="_blank "
+                    class="white">資訊安全政策</a>&nbsp;|&nbsp;
+                <a href="https://www.epa.gov.tw/Page/A33D3A6556ABFCD2 " target="_blank "
+                    class="white">網站資料開放宣告</a>&nbsp;|&nbsp;
+                <a href="https://epamail.epa.gov.tw/Front/MailBoxHome " target="_blank " class="white">意見信箱</a>
+                <br />
+                <p><span id="lupdate ">更新日期:2023/9/28</span></p>
             </div>
-        </footer>
-        <script src="js/jquery.min.js "></script>
-        <script src="js/bootstrap.bundle.min.js "></script>
-        <script src="js/main.js "></script>
-        <script src="./js/flowDiagram.js "></script>
-        <!-- <script
+            <div class="accessibility"><img src="images/accessibilityA.png " width="88 " height="31 "
+                    alt="通過A等級無障礙網頁檢測 " /></div>
+        </div>
+    </footer>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="./js/flowDiagram.js "></script>
+
+ 
+    <!-- <script
             src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
             integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
         <script src="./js/waste_tree.js"></script> -->
-    </body>
+</body>
+
 </html>

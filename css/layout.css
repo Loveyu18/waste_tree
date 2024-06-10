@@ -1250,7 +1250,7 @@
     }
 
     /* 循環流向圖 */
-  
+
     .flow-diagram {
         position: relative;
         align-items: center;
@@ -1278,14 +1278,13 @@
         padding: 50px 20px;
     }
 
-
     .structure-one {
         margin: auto;
         position: relative;
         cursor: pointer;
+        width: 100%;
+        height: 100%;
     }
-
-
 
     .structure-two ul {
         display: flex;
@@ -1295,38 +1294,99 @@
         gap: 30px
     }
 
-    .toggle-structure-three {
-        position: relative;
-    }
-
     .toggle-structure-three.active,
-    .structure-three-ul li{
+    .structure-three-ul li {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         backdrop-filter: blur(5px);
-
     }
 
-    .toggle-structure-three.active.active-style-0,
+    .toggle-structure-three {
+        position: relative;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .toggle-structure-three::before {
+        content: '';
+        position: absolute;
+        inset: -40px 60px;
+        transition: 0.5s;
+    }
+    
+
+    .toggle-structure-three.active[class*="active-style-"]::before {
+        animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
     #block-1 li {
-        background-color: #d39f9f5d;
+        background-color: #c57c7c5d;
     }
-
-    .toggle-structure-three.active.active-style-1,
+    
     #block-2 li {
         background-color: #c0bc7349;
     }
 
-    .toggle-structure-three.active.active-style-2,
     #block-3 li {
         background-color: #509e4949;
     }
 
-    .toggle-structure-three.active.active-style-3,
     #block-4 li {
         background-color: #515ab156;
     }
 
+    .toggle-structure-three.active[class*="active-style-"]::before {
+        background: linear-gradient(#e66465, #9198e5);
+    }
 
+    .toggle-structure-three.active[class*="active-style-"]::after 
+    {
+        content: '';
+        position: absolute;
+        inset: 3px;
+        border: 2px solid rgba(71, 71, 71, 0.111);
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .toggle-structure-three.active.active-style-0::after{
+        background: #c26a6a;
+    }
+    .toggle-structure-three.active.active-style-1::after{
+        background: #bcc26a;
+    } 
+    .toggle-structure-three.active.active-style-2::after{
+        background: #86da94;
+    } 
+    .toggle-structure-three.active.active-style-3::after 
+    {
+        background: #6a8ac2;
+    }
+
+    .toggle-structure-three.active[class*="active-style-"] .contain
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #242424;
+        z-index: 3;
+        border-radius: 8px;
+        gap: 10px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        background: none;
+    }
 
     .structure-one i,
     .toggle-structure-three i {
@@ -1341,12 +1401,13 @@
     }
 
     .structure-one,
-    .structure-two ul li {
+    .structure-two ul li,
+    .contain {
         border: 1px solid rgba(255, 255, 255, 0.24);
         width: 150px;
         height: 150px;
         border-radius: 8px;
-        background: rgba(255, 255, 2255, 0.15);
+        background: rgba(255, 255, 2255, 0.1);
         transition: 0.3s;
         display: flex;
         flex-direction: column;
@@ -1374,7 +1435,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-        gap: 20px;
+        gap: 18px;
         padding-left: 20px;
     }
 

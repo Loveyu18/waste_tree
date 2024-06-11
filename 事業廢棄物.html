@@ -111,8 +111,8 @@
                 <section class="waste_block">
                     <section class="flow-diagram">
                         <h2>循環流向圖</h2>
-                        <div class="information_select" style="margin-top: 0">
-                            請選擇年度：
+                        <div class="select-wrap">
+                            請選擇年度
                             <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
                                 <option value="0" selected="'selected'">2023</option>
                                 <option value="1">2024</option>
@@ -496,7 +496,9 @@
                         </ul>
                     </section>
                     <section class="news_b news_b2">
-                        <h2>重點事業廢棄物 <a class="report_download" href="">報告下載</a></h2>
+                        <h2>重點事業廢棄物</h2>
+                        <a href="#" class="report_download" title="報告下載連結"><img src="./images/book_download.svg" alt="" /><span>報告下載</span></a>
+
                         <ul class="download_b">
                             <li>
                                 <a class="txt_btn" href="#">
@@ -591,8 +593,8 @@
                         </section>
                         <section class="news_b news_b2">
                             <h2>智慧化報表生成器</h2>
-                            <div class="information_select" style="margin-top: 0">
-                                時間：
+                            <div class="select-wrap w-100">
+                                時間
                                 <select class="select" name="Query.MarkLevelId" id="Query_MarkLevelId">
                                     <option value="0" selected="'selected'">108年</option>
                                     <option value="3">108年</option>
@@ -603,13 +605,13 @@
                                     <option value="3">108年</option>
                                 </select>
                             </div>
-                            <div class="information_select" style="margin-top: 0">
-                                廢棄物代碼/名稱
-                                <input type="text" id="txt_seach" accesskey="S" class="text KeyWord" placeholder="請選擇廢棄物" title="請選擇廢棄物" ata-listener-added_8f861d35="true" />
-                                <a class="newsbtn" href="#">
-                                    <div>查詢</div>
-                                </a>
+                            <div class="select-wrap w-100 flex-wrap">
+                                廢棄物代碼或名稱
+                                <input type="text" id="txt_seach" accesskey="S" class="select w-50" placeholder="請輸入廢棄物" title="請輸入廢棄物" ata-listener-added_8f861d35="true" />
                             </div>
+                            <a class="report_download" href="#">
+                                <div>查詢</div>
+                            </a>
                         </section>
                     </section>
                 </section>
@@ -634,8 +636,6 @@
                 <div class="accessibility"><img src="images/accessibilityA.png " width="88 " height="31 " alt="通過A等級無障礙網頁檢測 " /></div>
             </div>
         </footer>
-        <script src="./js/anime.min.js"></script>
-        <script src="./js/animate.js"></script>
         <script src="js/jquery.min.js "></script>
         <script src="js/bootstrap.bundle.min.js "></script>
         <script src="js/main.js "></script>

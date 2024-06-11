@@ -1111,17 +1111,27 @@ li:hover .submenu {
     width: 80%;
 }
 
-.news_b a.report_download {
-    background: #21bf68e8 url(../images/book_download.svg) 10px/15% no-repeat;
+.news_b .report_download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 15px;
-    padding-left: 30px;
     color: #fff;
-    border-radius: 35px;
-    border: none;
+    background: rgba(255, 255, 2255, 0.15);
+    border-radius: 8px;
+    border: #ffffff52 1px solid;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: 0.3;
+    cursor: pointer;
 }
 
-.news_b a.report_download:hover {
-    background: #198e4ee8 url(../images/book_download.svg) 10px/15% no-repeat;
+.news_b .report_download:hover {
+    background: rgba(255, 255, 2255, 0.3);
+}
+
+.news_b .report_download img {
+    height: 20px;
 }
 
 .area {
@@ -1245,6 +1255,8 @@ table.Ranking {
 
 .flow-diagram {
     position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: #fff;
     gap: 15px;
@@ -1260,6 +1272,37 @@ table.Ranking {
     margin-bottom: 20px;
 }
 
+.select-wrap {
+    color: #fff;
+    background: rgba(255, 255, 2255, 0.15);
+    border-radius: 35px;
+    border: #ffffff52 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
+}
+.select-wrap > .select {
+    border: #ffffff52 1px solid;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.select-wrap > .select:hover {
+    background: rgba(255, 255, 2255, 0.3);
+}
+.select-wrap > .select::placeholder {
+    color: #fff;
+}
+.select-wrap > .select > option {
+    color: #000000;
+}
+
 .flow-diagram-wrap {
     position: relative;
     width: 100%;
@@ -1267,7 +1310,7 @@ table.Ranking {
     grid-template-columns: 1fr 2fr 3fr;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
 }
 
 @media (max-width: 768px) {

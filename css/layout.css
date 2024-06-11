@@ -1341,7 +1341,7 @@ table.Ranking {
     .structure-two ul {
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         margin-top: 30px;
         gap: 10px;
     }

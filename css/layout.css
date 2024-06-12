@@ -1477,6 +1477,11 @@ table.Ranking {
     right: 40px;
     font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+    .toggle-structure-three .sub-arrow {
+        display: none;
+    }
+}
 
 .contain,
 .structure-three-li {
@@ -1488,7 +1493,7 @@ table.Ranking {
 .structure-two ul li,
 .contain {
     border: 1px solid rgba(255, 255, 255, 0.24);
-    width: 150px;
+    width: 200px;
     height: 150px;
     border-radius: 8px;
     background: rgba(255, 255, 2255, 0.1);

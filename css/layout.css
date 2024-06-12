@@ -1092,7 +1092,7 @@ li:hover .submenu {
     top: -2px;
     left: -2px;
 }
-.btn_span{
+.btn_span {
     position: relative;
 }
 
@@ -1114,7 +1114,6 @@ li:hover .submenu {
 .btn_span_hightlight-yellow::before {
     background-color: #dde932;
 }
-
 
 .news_b.news_b2 a.txt_btn:hover {
     color: #000;
@@ -1350,7 +1349,6 @@ table.Ranking {
 .structure-one-mobile {
     margin: auto;
     position: relative;
-    cursor: pointer;
     width: 100%;
     height: 100%;
 }
@@ -1361,6 +1359,7 @@ table.Ranking {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -1398,11 +1397,11 @@ table.Ranking {
 
 @keyframes animate {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -1423,7 +1422,8 @@ table.Ranking {
 }
 
 .contain.active[class*="active-style-"]::before {
-    background: linear-gradient(#ff4040, #9198e5);
+    background: linear-gradient(110deg, #f122e0, #ffffff00, #23cdeb);
+    z-index: -2;
 }
 
 .contain.active[class*="active-style-"]::after {
@@ -1432,7 +1432,7 @@ table.Ranking {
     inset: 3px;
     border: 2px solid rgba(71, 71, 71, 0.111);
     border-radius: 5px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .contain.active.active-style-0::after {
@@ -1458,7 +1458,7 @@ table.Ranking {
     justify-content: center;
     align-items: center;
     color: #242424;
-    z-index: 0;
+    z-index: 10;
     border-radius: 8px;
     gap: 10px;
     letter-spacing: 2px;
@@ -1466,10 +1466,15 @@ table.Ranking {
     background: none;
 }
 
-.structure-one i,
-.toggle-structure-three i {
+.structure-one i {
     position: absolute;
     right: -50px;
+    font-size: 1.5rem;
+}
+
+.toggle-structure-three .sub-arrow {
+    position: absolute;
+    right: 40px;
     font-size: 1.5rem;
 }
 
@@ -1493,6 +1498,15 @@ table.Ranking {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    font-size: 1.2rem;
+   font-weight: normal ;
+}
+
+.structure-two ul li span,
+.structure-three-li span,
+.structure-four-li span {
+    font-size: 1rem;
+    margin-left: 5px;
 }
 
 .structure-one-mobile {

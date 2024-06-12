@@ -1387,7 +1387,7 @@ table.Ranking {
 .contain::before {
     content: "";
     position: absolute;
-    inset: -40px 60px;
+    inset: -70px 60px;
     transition: 0.5s;
 }
 

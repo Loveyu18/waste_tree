@@ -1347,26 +1347,28 @@ table.Ranking {
     }
 }
 
-.toggle-structure-three.active,
-.structure-three-ul li {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    backdrop-filter: blur(5px);
-}
-
-.toggle-structure-three {
+.contain {
     position: relative;
     overflow: hidden;
     font-size: 1rem;
 }
 
-.toggle-structure-three::before {
+
+.contain.active,
+.structure-three-ul li {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    backdrop-filter: blur(5px);
+}
+
+
+.contain::before {
     content: "";
     position: absolute;
     inset: -40px 60px;
     transition: 0.5s;
 }
 
-.toggle-structure-three.active[class*="active-style-"]::before {
+.contain.active[class*="active-style-"]::before {
     animation: animate 3s linear infinite;
 }
 
@@ -1396,11 +1398,11 @@ table.Ranking {
     background-color: #515ab156;
 }
 
-.toggle-structure-three.active[class*="active-style-"]::before {
+.contain.active[class*="active-style-"]::before {
     background: linear-gradient(#ff4040, #9198e5);
 }
 
-.toggle-structure-three.active[class*="active-style-"]::after {
+.contain.active[class*="active-style-"]::after {
     content: "";
     position: absolute;
     inset: 3px;
@@ -1409,30 +1411,30 @@ table.Ranking {
     z-index: 1;
 }
 
-.toggle-structure-three.active.active-style-0::after {
+.contain.active.active-style-0::after {
     background: #c26a6a;
 }
 
-.toggle-structure-three.active.active-style-1::after {
+.contain.active.active-style-1::after {
     background: #bcc26a;
 }
 
-.toggle-structure-three.active.active-style-2::after {
+.contain.active.active-style-2::after {
     background: #86da94;
 }
 
-.toggle-structure-three.active.active-style-3::after {
+.contain.active.active-style-3::after {
     background: #6a8ac2;
 }
 
-.toggle-structure-three.active[class*="active-style-"] .contain {
+.contain.active[class*="active-style-"]  {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #242424;
-    z-index: 3;
+    z-index: 0;
     border-radius: 8px;
     gap: 10px;
     letter-spacing: 2px;
@@ -1447,7 +1449,7 @@ table.Ranking {
     font-size: 1.5rem;
 }
 
-.toggle-structure-three,
+.contain,
 .structure-three-li {
     cursor: pointer;
 }

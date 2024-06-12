@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var buttons = document.querySelectorAll(".toggle-structure-three");
+    var buttons = document.querySelectorAll(".contain");
     var icons = document.querySelectorAll(".sub-arrow");
     var blocks = document.querySelectorAll(".structure-three-ul");
 
